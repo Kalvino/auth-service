@@ -2,7 +2,7 @@ admin_user_params = {
   user: {
     first_name: 'Jeje',
     last_name: 'Namu',
-    email: 'jeje@namu.com',
+    email: 'calv@gmail.com',
     role: 'admin',
     password: 'password'
   }

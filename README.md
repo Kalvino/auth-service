@@ -7,7 +7,7 @@ bin/rails db:setup
 ## Login as initialized admin/customer user
 
 admin_credentials = {
-    "email": "jeje@namu.com",
+    "email": "calv@gmail.com",
     "password": "password"
 }
 
@@ -18,7 +18,7 @@ customer_credentials = {
 
 OR
 
-- create user and login as the user:
+- create the user you want (role: {admin/customer}) and login:
 
 {
 	"user" :{
@@ -30,11 +30,19 @@ OR
 	}
 }
 
+
+curl -X POST 'http://localhost:3001/login' \
+   -H 'Content-Type: application/json' \
+   -d '{ "email": "calv@gmail.com", "password": "password" }'
+
+
 ## Verify token
 
 bin/rails server -p 3001
 
 http://localhost:3001/verify?token={token}
+
+
 
 ## Test Coverage
 Coverage report generated for RSpec to /authentication/coverage.
