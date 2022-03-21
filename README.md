@@ -1,8 +1,8 @@
 # Authentication
 
 ## Set up
-bundle install
-bin/rails db:setup
+- bundle install
+- bin/rails db:setup
 
 ## Login as initialized admin/customer user
 
